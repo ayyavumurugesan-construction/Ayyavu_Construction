@@ -11,7 +11,7 @@ const Footer = () => {
           </div>
           <div className="text-center md:text-right">
             <p className="text-gray-400">
-              © 2025 Ayyavu Promoters. All rights reserved.
+              © 2025 Ayyavu Constructions. All rights reserved.
             </p>
           </div>
         </div>
