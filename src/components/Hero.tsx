@@ -29,11 +29,11 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center relative z-10 pt-20">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            Ayyavu Promoters
+            Ayyavu Constructions
           </h2>
           <p className="text-xl sm:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
             <h1><b className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 text-sm shadow-lg hover:bg-white/15 hover:border-white/30 transition-all duration-300"> Creating Heavens on Earth</b></h1><br />
-            Ayyavu Promoters - Building trust, creating homes, and shaping communities for over a decade
+            Ayyavu Constructions - Building trust, creating homes, and shaping communities for over a decade
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <button 
