@@ -30,10 +30,10 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Why Choose Ayyavu Promoters?
+              Why Choose Ayyavu Constructions?
             </h2>
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              With over 20+ years of experience in the real estate industry, Ayyavu Promoters has 
+              With over 20+ years of experience in the real estate industry, Ayyavu Constructions has 
               established itself as a trusted name in property development. We are committed to 
               delivering exceptional quality homes and commercial spaces that exceed expectations.
             </p>
