@@ -65,7 +65,7 @@ const Header = () => {
                 alt="Ayyavu Promoters Logo" 
                 className="h-12 w-auto"
               />
-              <h1 className="text-base font-bold bg-gradient-to-r from-yellow-600 via-amber-500 to-yellow-700 bg-clip-text text-transparent hidden sm:block drop-shadow-lg">Ayyavu Promoters</h1>
+              <h1 className="text-base font-bold bg-gradient-to-r from-yellow-600 via-amber-500 to-yellow-700 bg-clip-text text-transparent hidden sm:block drop-shadow-lg">Ayyavu Constructions</h1>
             </div>
           </div>
           <nav className="flex space-x-3">
