@@ -70,19 +70,19 @@ const Properties = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-950 via-red-950/20 to-gray-950 text-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50">
       {/* Header */}
-      <div className="bg-black/20 backdrop-blur-md border-b border-white/10">
+      <div className="bg-white/95 backdrop-blur-md border-b border-blue-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <button 
               onClick={handleBackClick}
-              className="flex items-center space-x-2 text-white/90 hover:text-red-400 transition-all duration-300 hover:scale-105"
+              className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105"
             >
               <ArrowLeft className="h-5 w-5" />
               <span>Back to Home</span>
             </button>
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-yellow-600 via-amber-500 to-yellow-700 bg-clip-text text-transparent">
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-green-500 to-blue-700 bg-clip-text text-transparent">
               {propertyType === 'residential' ? 'Residential Properties' : 'Commercial Properties'}
             </h1>
             <div className="w-24"></div>
@@ -94,19 +94,19 @@ const Properties = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {loading ? (
           <div className="text-center py-12">
-            <div className="text-white text-xl">Loading properties...</div>
+            <div className="text-gray-800 text-xl">Loading properties...</div>
           </div>
         ) : filteredProperties.length === 0 ? (
           <div className="text-center py-12">
-            <div className="text-white text-xl">No {propertyType} properties available at the moment.</div>
-            <p className="text-gray-400 mt-2">Check back later for new listings!</p>
+            <div className="text-gray-800 text-xl">No {propertyType} properties available at the moment.</div>
+            <p className="text-gray-600 mt-2">Check back later for new listings!</p>
           </div>
         ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProperties.map((property) => (
             <div 
               key={property.id}
-              className="bg-gradient-to-br from-gray-900/80 to-red-950/30 rounded-2xl overflow-hidden border border-red-600/30 hover:border-red-400 transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer backdrop-blur-sm"
+              className="construction-card rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
             >
               {/* Property Image */}
               <div className="relative h-48 overflow-hidden">
@@ -130,22 +130,22 @@ const Properties = () => {
 
               {/* Property Details */}
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">{property.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">{property.title}</h3>
                 
-                <div className="flex items-center text-gray-300 mb-2">
-                  <MapPin className="h-4 w-4 mr-2 text-red-400" />
+                <div className="flex items-center text-gray-600 mb-2">
+                  <MapPin className="h-4 w-4 mr-2 text-blue-600" />
                   <span className="text-sm">{property.location}</span>
                 </div>
 
                 <div className="flex justify-between items-center mb-4">
-                  <span className="text-2xl font-bold text-red-400">{property.price}</span>
-                  <span className="text-gray-300 text-sm">{property.area}</span>
+                  <span className="text-2xl font-bold text-blue-600">{property.price}</span>
+                  <span className="text-gray-600 text-sm">{property.area}</span>
                 </div>
 
-                <p className="text-gray-300 text-sm mb-4 line-clamp-2">{property.description}</p>
+                <p className="text-gray-600 text-sm mb-4 line-clamp-2">{property.description}</p>
 
                 {/* Contact Info */}
-                <div className="mb-4 text-sm text-gray-400">
+                <div className="mb-4 text-sm text-gray-500">
                   <p>Contact: {property.contact_name}</p>
                   <p>Phone: {property.contact_phone}</p>
                   <p>Email: {property.contact_email}</p>
@@ -155,20 +155,20 @@ const Properties = () => {
                 <div className="space-y-2">
                   <button 
                     onClick={() => handleContactSeller(property)}
-                    className="w-full py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 bg-green-600 hover:bg-transparent hover:border-2 hover:border-green-400 hover:text-green-400 text-white flex items-center justify-center space-x-2"
+                    className="w-full py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 bg-green-600 hover:bg-green-700 text-white flex items-center justify-center space-x-2"
                   >
                     <span>WhatsApp</span>
                   </button>
                   <div className="grid grid-cols-2 gap-2">
                     <button 
                       onClick={() => handleCallSeller(property.contact_phone)}
-                      className="py-2 px-4 rounded-lg font-medium transition-all duration-300 hover:scale-105 bg-blue-600 hover:bg-transparent hover:border-2 hover:border-blue-400 hover:text-blue-400 text-white text-sm"
+                      className="py-2 px-4 rounded-lg font-medium transition-all duration-300 hover:scale-105 bg-blue-600 hover:bg-blue-700 text-white text-sm"
                     >
                       Call
                     </button>
                     <button 
                       onClick={() => handleEmailSeller(property.contact_email, property)}
-                      className="py-2 px-4 rounded-lg font-medium transition-all duration-300 hover:scale-105 bg-red-600 hover:bg-transparent hover:border-2 hover:border-red-400 hover:text-red-400 text-white text-sm"
+                      className="py-2 px-4 rounded-lg font-medium transition-all duration-300 hover:scale-105 bg-orange-600 hover:bg-orange-700 text-white text-sm"
                     >
                       Email
                     </button>
@@ -182,15 +182,15 @@ const Properties = () => {
       </div>
 
       {/* Contact Section */}
-      <div className="bg-gradient-to-r from-red-950/30 to-gray-900/30 border-t border-red-600/30 py-12">
+      <div className="bg-gradient-to-r from-blue-100 to-green-100 border-t border-blue-200 py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-white mb-4">Interested in Any Property?</h2>
-          <p className="text-gray-300 mb-6">Contact us for site visits, documentation, and personalized assistance.</p>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Interested in Any Property?</h2>
+          <p className="text-gray-600 mb-6">Contact us for site visits, documentation, and personalized assistance.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-red-600 hover:bg-transparent hover:border-2 hover:border-red-400 hover:text-red-400 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105">
+            <button className="construction-button text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105">
               <a href="tel:+919360493616">Schedule Site Visit</a>
             </button>
-            <button className="border-2 border-red-400 text-red-400 hover:bg-transparent hover:border-white hover:text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105">
+            <button className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105">
               <a href="https://wa.me/919360493616?text=Hi, I would like to get price details for properties">Get Price Details</a>
             </button>
           </div>

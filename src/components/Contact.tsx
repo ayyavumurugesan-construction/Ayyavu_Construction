@@ -69,55 +69,51 @@ const Contact = () => {
     }
   };
   return (
-    <section id="contact" className="py-20 text-white relative">
+    <section id="contact" className="py-20 relative bg-gradient-to-br from-slate-50 to-blue-50">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: 'url(https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)'
         }}
       ></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80"></div>
-      <div className="absolute inset-0 bg-gradient-to-t from-red-950/60 via-transparent to-red-950/40"></div>
-      {/* Smudge effect at top */}
-      <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-black via-black/60 to-transparent"></div>
-      <div className="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-red-950/20 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-blue-50/90 to-white/95"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 relative z-10">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
             Get In Touch
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Ready to find your dream property? Contact us today and let's make it happen.
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
           <div>
-            <h3 className="text-2xl font-semibold mb-8">Contact Information</h3>
+            <h3 className="text-2xl font-semibold text-gray-800 mb-8">Contact Information</h3>
             <div className="space-y-6">
-              <div className="flex items-start space-x-4 hover:scale-105 hover:bg-white/10 p-4 rounded-lg transition-all duration-300 cursor-pointer">
-                <Phone className="h-6 w-6 text-red-400 flex-shrink-0 mt-1" />
+              <div className="flex items-start space-x-4 hover:scale-105 hover:bg-blue-50 p-4 rounded-lg transition-all duration-300 cursor-pointer">
+                <Phone className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
                 <div>
-                  <div className="font-medium">Phone</div>
-                  <div className="text-gray-300"><a href="tel:+91 93604 93616">+91 93604 93616</a></div>
-                  <div className="text-gray-300"><a href="tel:+91 93457 70330">+91 93457 70330</a></div>
+                  <div className="font-medium text-gray-800">Phone</div>
+                  <div className="text-gray-600"><a href="tel:+91 93604 93616">+91 93604 93616</a></div>
+                  <div className="text-gray-600"><a href="tel:+91 93457 70330">+91 93457 70330</a></div>
                 </div>
               </div>
               
-              <div className="flex items-start space-x-4 hover:scale-105 hover:bg-white/10 p-4 rounded-lg transition-all duration-300 cursor-pointer">
-                <Mail className="h-6 w-6 text-red-400 flex-shrink-0 mt-1" />
+              <div className="flex items-start space-x-4 hover:scale-105 hover:bg-blue-50 p-4 rounded-lg transition-all duration-300 cursor-pointer">
+                <Mail className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
                 <div>
-                  <div className="font-medium">Email</div>
-                  <div className="text-gray-300"><a href="mailto:ayyavu.ayyavupromoters@gmail.com">ayyavu.ayyavuconstruction@gmail.com </a></div>
+                  <div className="font-medium text-gray-800">Email</div>
+                  <div className="text-gray-600"><a href="mailto:ayyavu.ayyavupromoters@gmail.com">ayyavu.ayyavuconstruction@gmail.com </a></div>
                 
                 </div>
               </div>
               
-              <div className="flex items-start space-x-4 hover:scale-105 hover:bg-white/10 p-4 rounded-lg transition-all duration-300 cursor-pointer">
-                <MapPin className="h-6 w-6 text-red-400 flex-shrink-0 mt-1" />
+              <div className="flex items-start space-x-4 hover:scale-105 hover:bg-blue-50 p-4 rounded-lg transition-all duration-300 cursor-pointer">
+                <MapPin className="h-6 w-6 text-purple-600 flex-shrink-0 mt-1" />
                 <div>
-                  <div className="font-medium">Address</div>
-                  <div className="text-gray-300">
+                  <div className="font-medium text-gray-800">Address</div>
+                  <div className="text-gray-600">
                    No-17, Vidhya Colony 5th cross, Thadagam rd<br />
                     TVS Nagar,<br />
                     Coimbatore - 641025
@@ -125,20 +121,20 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="flex items-start space-x-4 hover:scale-105 hover:bg-white/10 p-4 rounded-lg transition-all duration-300 cursor-pointer">
-                <Clock className="h-6 w-6 text-red-400 flex-shrink-0 mt-1" />
+              <div className="flex items-start space-x-4 hover:scale-105 hover:bg-blue-50 p-4 rounded-lg transition-all duration-300 cursor-pointer">
+                <Clock className="h-6 w-6 text-orange-600 flex-shrink-0 mt-1" />
                 <div>
-                  <div className="font-medium">Business Hours</div>
-                  <div className="text-gray-300">Monday - Saturday: 9:00 AM - 7:00 PM</div>
-                  <div className="text-gray-300">Sunday: 10:00 AM - 5:00 PM</div>
+                  <div className="font-medium text-gray-800">Business Hours</div>
+                  <div className="text-gray-600">Monday - Saturday: 9:00 AM - 7:00 PM</div>
+                  <div className="text-gray-600">Sunday: 10:00 AM - 5:00 PM</div>
                 </div>
               </div>
             </div>
           </div>
           
           <div>
-            <h3 className="text-2xl font-semibold mb-8">Send Us a Message</h3>
-            <form onSubmit={handleSubmit} className="space-y-6 bg-gradient-to-br from-white/5 via-white/10 to-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-xl hover:backdrop-blur-2xl hover:bg-gradient-to-br hover:from-white/10 hover:via-white/15 hover:to-white/10 hover:border-white/20 transition-all duration-500 shadow-2xl hover:shadow-3xl">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-8">Send Us a Message</h3>
+            <form onSubmit={handleSubmit} className="space-y-6 construction-card p-8 rounded-3xl shadow-2xl">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <input
                   type="text"
@@ -146,7 +142,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   placeholder="Your Name"
-                  className="w-full px-6 py-4 bg-white/5 border border-white/20 rounded-2xl focus:outline-none focus:border-white/40 focus:bg-white/10 hover:border-white/30 hover:bg-white/8 transition-all duration-300 text-white placeholder-gray-300 backdrop-blur-md"
+                  className="bright-form-input w-full px-6 py-4 rounded-2xl focus:outline-none transition-all duration-300"
                 />
                 <input
                   type="email"
@@ -154,7 +150,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder="Your Email"
-                  className="w-full px-6 py-4 bg-white/5 border border-white/20 rounded-2xl focus:outline-none focus:border-white/40 focus:bg-white/10 hover:border-white/30 hover:bg-white/8 transition-all duration-300 text-white placeholder-gray-300 backdrop-blur-md"
+                  className="bright-form-input w-full px-6 py-4 rounded-2xl focus:outline-none transition-all duration-300"
                 />
               </div>
               <input
@@ -163,7 +159,7 @@ const Contact = () => {
                 value={formData.phone}
                 onChange={handleInputChange}
                 placeholder="Your Phone"
-                className="w-full px-6 py-4 bg-white/5 border border-white/20 rounded-2xl focus:outline-none focus:border-white/40 focus:bg-white/10 hover:border-white/30 hover:bg-white/8 transition-all duration-300 text-white placeholder-gray-300 backdrop-blur-md"
+                className="bright-form-input w-full px-6 py-4 rounded-2xl focus:outline-none transition-all duration-300"
               />
               <textarea
                 rows={5}
@@ -171,16 +167,16 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleInputChange}
                 placeholder="Your Message"
-                className="w-full px-6 py-4 bg-white/5 border border-white/20 rounded-2xl focus:outline-none focus:border-white/40 focus:bg-white/10 hover:border-white/30 hover:bg-white/8 transition-all duration-300 resize-none text-white placeholder-gray-300 backdrop-blur-md"
+                className="bright-form-input w-full px-6 py-4 rounded-2xl focus:outline-none transition-all duration-300 resize-none"
               ></textarea>
               <div className="relative group">
                 <button
                   type="submit"
                   disabled={!isFormValid || isSubmitting}
-                  className={`w-full py-4 px-6 rounded-2xl font-semibold transition-all duration-500 backdrop-blur-md ${
+                  className={`w-full py-4 px-6 rounded-2xl font-semibold transition-all duration-500 ${
                     isFormValid && !isSubmitting
-                      ? 'bg-gradient-to-r from-red-600/80 to-red-500/80 hover:from-red-500 hover:to-red-400 text-white shadow-lg hover:shadow-xl border border-red-400/30 hover:border-red-300' 
-                      : 'bg-white/5 hover:bg-gradient-to-r hover:from-red-600/60 hover:to-red-500/60 text-white/60 hover:text-white border border-white/10 hover:border-red-400/50'
+                      ? 'construction-button text-white shadow-lg hover:shadow-xl' 
+                      : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                   } hover:scale-105`}
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
