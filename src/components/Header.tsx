@@ -61,7 +61,7 @@ const Header = () => {
           <div className="flex-shrink-0">
             <div className="flex items-center space-x-3">
               <img 
-                src="/whatsapp_image_2025-10-02_at_08.03.53_710855ae.jpg" 
+                src="/whatsapp_image_2026-01-26_at_6.53.55_am.jpeg" 
                 alt="Ayyavu Promoters Logo" 
                 className="h-12 w-auto"
               />
