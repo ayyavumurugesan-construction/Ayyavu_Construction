@@ -1,0 +1,92 @@
+import React from 'react';
+import { Instagram, MessageCircle, Youtube, Shield } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+
+const Header = () => {
+  const navigate = useNavigate();
+
+  // Editable social media links - you can change these URLs
+  const socialLinks = {
+    instagram: 'https://www.instagram.com/ayyavu_construction?utm_source=qr&igsh=MW94OGlrYjdua2NnZQ==',
+    whatsapp: 'https://wa.me/9360493616',
+    youtube: 'https://youtube.com/@ayyavuconstruction4201?si=xvZCysH0be_Lup9B'
+  };
+
+  const handleAdminClick = () => {
+    navigate('/admin');
+  };
+
+  return (
+    <>
+      {/* Admin Button - Bottom Right Fixed on Website */}
+      <button
+        onClick={handleAdminClick}
+        className="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-blue-600 to-green-600 backdrop-blur-md border border-blue-300/30 rounded-full p-3 hover:from-blue-500 hover:to-green-500 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl"
+        title="Admin Panel"
+      >
+        <Shield className="h-5 w-5 text-white" />
+      </button>
+
+      <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-4xl px-4">
+      <div className="bg-gradient-to-r from-blue-900/90 via-blue-800/90 to-green-900/90 backdrop-blur-md rounded-full border border-blue-300/30 shadow-2xl">
+        <div className="flex justify-between items-center py-2 px-4">
+          {/* Social Media Icons */}
+          <div className="flex items-center space-x-3">
+            <a 
+              href={socialLinks.instagram} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white/80 hover:text-pink-400 transition-all duration-300 hover:scale-110"
+            >
+              <Instagram className="h-5 w-5" />
+            </a>
+            <a 
+              href={socialLinks.whatsapp} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white/80 hover:text-green-400 transition-all duration-300 hover:scale-110"
+            >
+              <MessageCircle className="h-5 w-5" />
+            </a>
+            <a 
+              href={socialLinks.youtube} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white/80 hover:text-red-400 transition-all duration-300 hover:scale-110"
+            >
+              <Youtube className="h-5 w-5" />
+            </a>
+          </div>
+
+          <div className="flex-shrink-0">
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/whatsapp_image_2026-01-26_at_6.53.55_am-photoroom.png" 
+                alt="Ayyavu Promoters Logo" 
+                className="h-12 w-auto"
+              />
+              <h1 className="text-base font-bold bg-gradient-to-r from-blue-600 via-green-500 to-blue-700 bg-clip-text text-transparent hidden sm:block drop-shadow-lg">Ayyavu Constructions</h1>
+            </div>
+          </div>
+          <nav className="flex space-x-3">
+            <a href="#home" className="nav-link text-white/90 hover:text-white text-sm font-medium relative overflow-hidden">
+              <span className="relative z-10">Home</span>
+            </a>
+            <a href="#services" className="nav-link text-white/90 hover:text-white text-sm font-medium relative overflow-hidden">
+              <span className="relative z-10">Services</span>
+            </a>
+            <a href="#about" className="nav-link text-white/90 hover:text-white text-sm font-medium relative overflow-hidden">
+              <span className="relative z-10">About</span>
+            </a>
+            <a href="#contact" className="nav-link text-white/90 hover:text-white text-sm font-medium relative overflow-hidden">
+              <span className="relative z-10">Contact</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+      </header>
+    </>
+  );
+};
+
+export default Header;
